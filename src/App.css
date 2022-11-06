@@ -1,0 +1,167 @@
+:root{
+  --bg-white:rgba(255, 255, 255, 0.01);
+  --br: 5px;
+  --border:  solid 1px rgba(255,255,255, 0.5);
+
+}
+
+body{
+  background-image: url(assets/fondo2.jpg);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.container{
+  display: flex;
+  background-color: var(--bg-white) ;
+  height: 500px;
+
+  backdrop-filter: blur(20px);
+  border-radius: var(--br);
+  border:var(--border);
+  width: 70%;
+  margin: 100px auto;
+  overflow: hidden;
+
+  box-shadow: 0 10px 20px 5px rgba(0,0,0,0.5);
+}
+
+.sidebar{
+  background-color: rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 20%;
+}
+
+.sidebar ul{
+  padding: 0;
+  margin: 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.sidebar ul li a{
+  display: block;
+  color: rgba(255,255,255, 0.8);
+  text-decoration: none ;
+  padding: 12px 10px;
+}
+
+.sidebar ul li a:hover{
+  color:white;
+  border-radius: var(--br);
+  background-color: #0084ff;
+  box-shadow: 0 10px 20px 5px rgba(10,137,255,0.5);
+}
+
+.profile-card{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-image{
+  border-radius: 50%;
+  width: 120px;
+  box-shadow: 0 10px 20px 5px rgba(0,0,0,0.3);
+}
+
+main{
+  padding: 20px;
+  width: 70%;
+}
+
+main .header h2{
+  color:rgba(0,0,0,0.7);
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+main .header span{
+  color:rgba(0,0,0,0.5);
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bolder;
+  display: block;
+}
+
+.card{
+  border-radius: var(--br);
+  box-sizing: border-box;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  overflow: hidden;
+  border: var(--border);
+  box-shadow: 0 5px 15px 2px rgba(0,0,0,0.15);
+}
+
+.card .card-content{
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 20px;
+}
+
+.card .left{
+  padding-right: 15px;
+}
+
+.card .right{
+  width: 100%;
+}
+
+.card .right .task{
+  font-size: 22px;
+}
+
+.card .right .status{
+  padding: 5px;
+  color: #888;
+  font-size: 14px;
+}
+
+.card .right .progress{
+  background-color: #ddd;
+  width: 100%;
+  height: 100%;
+}
+
+.card .right .progress .fill{
+  height: 10px;
+  margin: 10px 0;
+}
+
+.card .right .progress .fill-20{
+  background-color: rgb(255, 56,21);
+  width: 20%;
+}
+
+.card .right .progress .fill-40{
+  background-color: rgb(255, 181,21);
+  width: 40%;
+}
+
+.card .right .progress .fill-100{
+  background-color: rgb(21, 255, 37);
+  width: 100;
+}
+
+.card .buttons{
+  backdrop-filter: blur(5px);
+  text-align: right;
+  padding: 20px;
+}
+
+.btn{
+  background-color: #0084ff;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  border-radius: var(--br);
+}
+
+.btn:hover{
+  background-color: #008cff;
+  box-shadow: 0 5px 10px 2px rgba(10,137,255,0.5);
+  cursor: pointer;
+}
